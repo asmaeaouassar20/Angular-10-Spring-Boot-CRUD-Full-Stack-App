@@ -14,6 +14,6 @@
 ## Angular CLI (Command Line Interface)
 C'est un outil permettant de créer, développer, tester et déployer des applications Angular facilement via des commandes.
 
-**Pour vérifier s'il est déjà installé: ```ng serve```**
+**Pour vérifier s'il est déjà installé: ```ng version```**
 
 
