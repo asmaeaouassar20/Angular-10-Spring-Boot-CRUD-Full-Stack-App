@@ -16,4 +16,9 @@ C'est un outil permettant de créer, développer, tester et déployer des applic
 
 **Pour vérifier s'il est déjà installé: ```ng version```**
 
+##NVM (Node Version Manager)
+C'est un outil permettant de gérer plusieurs versions de Node.js sur une même machine.
+
+**Pour vérifier s'il est installé, exécutez la commande suivante dans un terminal : ```nvm --version```**
+
 
