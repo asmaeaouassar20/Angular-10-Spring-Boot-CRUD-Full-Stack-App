@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add new Employee</title>
+</head>
+<body>
+<h1>Add new Employee</h1>
+  <form th:action="@{/api/v1/employees}" th:object="${employee}" method="POST">
+      <input type="text" th:field="*{firstName}">
+      <input type="text" th:field="*{lastName}">
+      <input type="email" th:field="*{emailId}">
+
+      <button type="submit">Save Employee</button>
+  </form>
+</body>
+</html>

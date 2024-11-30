@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Employee</title>
+</head>
+<body>
+    <form th:action="@{/api/v1/updateEmployee}" th:object="${employee}" method="POST">
+        <input th:value="${employee.id}" readonly th:field="*{id}">
+        <input th:value="${employee.firstName}" th:field="*{firstName}">
+        <input th:value="${employee.lastName}" th:field="*{lastName}">
+        <input th:value="${employee.emailId}" th:field="*{emailId}">
+
+        <button type="submit">Save Employee</button>
+    </form>
+</body>
+</html>
