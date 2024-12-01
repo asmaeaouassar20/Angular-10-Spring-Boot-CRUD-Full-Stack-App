@@ -3,30 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <title>list of employees</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .btn-outline-dark:hover{
+            background-color: #0d6efd;
+        }
+    </style>
 </head>
 <body>
-    <h1>Employee List</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>FirstName</th>
-                <th>LastName</th>
-                <th>Email</th>
-            </tr>
-        </thead>
+  <div class="container ">
+      <div class="row">
+          <div class="col-12">
+              <h1 class="mt-5 mb-5">List Of Employees</h1>
+              <table class="table">
+                  <thead>
+                  <tr>
+                      <th scope="col" class="p-4 text-center">FirstName</th>
+                      <th scope="col" class="p-4 text-center">LastName</th>
+                      <th scope="col" class="p-4 text-center">Email</th>
+                  </tr>
+                  </thead>
 
-        <tbody>
-            <tr th:each="employee:${ListEmployees}">
-                <td th:text="${employee.firstName}"></td>
-                <td th:text="${employee.lastName}"></td>
-                <td th:text="${employee.emailId}"></td>
-                <td><a th:href="@{/api/v1/showDetails/{id}(id=${employee.id})}">Details</a></td>
-                <td><a th:href="@{/api/v1/update/{id}(id=${employee.id})}">Update</a></td>
-                <td><a th:href="@{/api/v1/delete/{id}(id=${employee.id})}">Delete</a></td>
-            </tr>
-        </tbody>
-    </table>
+                  <tbody>
+                  <tr th:each="employee:${ListEmployees}">
+                      <td th:text="${employee.firstName}" class="text-center"></td>
+                      <td th:text="${employee.lastName}" class="text-center"></td>
+                      <td th:text="${employee.emailId}" class="text-center"></td>
+                      <td><a th:href="@{/api/v1/showDetails/{id}(id=${employee.id})}" type="button" class="btn btn-secondary text-center">Details</a></td>
+                      <td><a th:href="@{/api/v1/update/{id}(id=${employee.id})}" type="button" class="btn btn-info text-center">Update</a></td>
+                      <td><a th:href="@{/api/v1/delete/{id}(id=${employee.id})}" type="button" class="btn btn-danger">Delete</a></td>
+                  </tr>
+                  </tbody>
+              </table>
 
-    <a th:href="@{/api/v1/addNewEmployee}">Add new Employee</a>
+              <div class="d-grid gap-2 mt-5">
+                  <a th:href="@{/api/v1/addNewEmployee}" class="btn btn-outline-dark">Add new Employee</a>
+              </div>
+          </div>
+      </div>
+  </div>
+
 </body>
 </html>
