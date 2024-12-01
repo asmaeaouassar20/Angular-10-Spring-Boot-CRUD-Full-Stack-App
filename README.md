@@ -1,4 +1,11 @@
-# Employees Management : Angular-10-Spring-Boot-CRUD-Full-Stack-App
+# Employees Management : Spring-Boot-Thymeleaf-CRUD-App
+
+# les opérations de CRUD utilisées
+<img src="https://github.com/user-attachments/assets/c729bb62-24c3-49c7-92ed-5dda36e644d5"></img>
+<img src="https://github.com/user-attachments/assets/4351885c-1e08-47eb-a638-da57fbec0353"></img>
+<img src="https://github.com/user-attachments/assets/c590e49d-bbe8-4a17-9d38-647a3eaf16c1"></img>
+
+
 ## Node.js 
 - C'est un environnement d'exécution JavaScript côté serveur qui permet de créer des applications web  rapide et évolutives.
 - Il permet d'exécuter des commandes comme ```ng serve``` pour démarre le serveur de développement Angular, compiler les fichiers ...
@@ -35,3 +42,7 @@ C'est un outil permettant de gérer plusieurs versions de Node.js sur une même 
 ```rm package-lock.json```
   Cette suppression permet de repartir sur une base propre avant de réinstaller les dépendances, surtout qu'on a changé la version de Node.js.
 - Une foisces fichiers supprimés, on peut maintenant réinstaller toutes les dépendances en exécutant : ```npm install``` pour recréer le dossier ```node_modules``` et le fichier ```package-lock.json``` avec des versions compatibles.
+
+
+
+
