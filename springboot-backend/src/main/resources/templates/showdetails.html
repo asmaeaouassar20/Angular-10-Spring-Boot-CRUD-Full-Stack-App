@@ -25,6 +25,10 @@
                         <label class="form-label text-warning">Email</label>
                         <input id="email" name="email" class="form-control" type="email" th:value="${employee.emailId}" readonly>
                     </div>
+
+                    <a th:href="@{/api/v1/employees}" type="button" class="btn btn-warning btn-sm my-5">
+                        Back to list of employees
+                    </a>
                 </div>
             </form>
         </div>
