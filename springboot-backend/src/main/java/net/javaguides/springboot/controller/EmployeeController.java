@@ -33,7 +33,7 @@ public class EmployeeController {
 
 
 	
-	// create employee rest api
+	// create employee
 	@PostMapping("/employees")
 	public String createEmployee(@ModelAttribute("employee") Employee employee) {
 		 employeeRepository.save(employee);
